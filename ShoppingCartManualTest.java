@@ -52,8 +52,8 @@ public class ShoppingCartManualTest {
 
         // Test 4 : ใช้คูปองส่วนลด BOGO ซื้อ 1 แถม 1
         ArrayList<CartItem> BOGOCart = new ArrayList<>();
-        BOGOCart.add(new CartItem("BOGO", "Champoo", 50.0, 3)); // 100
-        BOGOCart.add(new CartItem("BOGO", "Soap", 25.0, 3)); // 50
+        BOGOCart.add(new CartItem("BOGO", "yasifun", 50.0, 3)); // 100
+        BOGOCart.add(new CartItem("BOGO", "pangsifun", 25.0, 3)); // 50
         double total4 = ShoppingCartCalculator.calculateTotalPrice(BOGOCart);
         if (total4 == 150.0) {
             System.out.println("PASSED: BOGO cart total is correct (150.0)");
@@ -65,7 +65,7 @@ public class ShoppingCartManualTest {
 
         // Test 5 : ใช้คูปองส่วนลด BULK ซื้อ 6 ชิ้นขึ้นไป
         ArrayList<CartItem> BULKCart = new ArrayList<>();
-        BULKCart.add(new CartItem("BULK", "Pencil",10.0, 10)); // 90
+        BULKCart.add(new CartItem("BULK", "mask",10.0, 10)); // 90
         double total5 = ShoppingCartCalculator.calculateTotalPrice(BULKCart);
         if (total5 == 90.0) {
             System.out.println("PASSED: BULK cart total is correct (90.0)");
