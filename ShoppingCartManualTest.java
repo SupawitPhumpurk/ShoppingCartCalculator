@@ -39,8 +39,8 @@ public class ShoppingCartManualTest {
 
         // Test 3: คำนวณปกติ ไม่มีส่วนลด
         ArrayList<CartItem> simpleCart = new ArrayList<>();
-        simpleCart.add(new CartItem("NORMAL", "Lays", 25.0, 2)); // 50
-        simpleCart.add(new CartItem("NORMAL", "Tea", 15.0, 1));      // 15
+        simpleCart.add(new CartItem("NORMAL", "Bread", 25.0, 2)); // 50
+        simpleCart.add(new CartItem("NORMAL", "Milk", 15.0, 1));      // 15
         double total3 = ShoppingCartCalculator.calculateTotalPrice(simpleCart);
         if (total3 == 65.0) {
             System.out.println("PASSED: Simple cart total is correct (65.0)");
